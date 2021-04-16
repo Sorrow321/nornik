@@ -7,14 +7,17 @@ from pathlib import Path
 def get_frames(video_path):
     cap= cv2.VideoCapture(video_path)
     p = Path(video_path)
-    filename = p.stem
-    aim_folder_name = 'frames'
-    i=0
-    while(cap.isOpened()):
+    video_name = p.stem
+    target_folder_name = Path('frames')
+    i = 0
+    out_path = target_folder_name / video_name
+    out_path.mkdir(parents=True, exist_ok=True)
+    while cap.isOpened():
         ret, frame = cap.read()
         if ret == False:
             break
-        cv2.imwrite(os.path.join(aim_folder_name, filename+str(i)+'.png'), frame)
+        print(i)
+        cv2.imwrite(str(out_path /  f'{i}.png'), frame)
         i += 1
     cap.release()
     cv2.destroyAllWindows()
