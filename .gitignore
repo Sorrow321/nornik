@@ -1,3 +1,5 @@
 dataset*
 frames/
 out/
+frames_binarized/
+.ipynb_checkpoints/

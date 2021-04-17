@@ -17,7 +17,9 @@ def get_frames(video_path):
         if ret == False:
             break
         print(i)
-        cv2.imwrite(str(out_path /  f'{i}.png'), frame)
+        scale_factor = 0.25
+        frame = cv2.resize(frame, (int(frame.shape[1] * scale_factor), int(frame.shape[0] * scale_factor)), interpolation = cv2.INTER_AREA)
+        cv2.imwrite(str(out_path /  f'{i}.jpg'), frame)
         i += 1
     cap.release()
     cv2.destroyAllWindows()
