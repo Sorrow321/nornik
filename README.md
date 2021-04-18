@@ -1,6 +1,6 @@
 # Решение задачи №1 в хакатоне Норникеля от команды MSUBIGDATA
 
-Поясняющее видео: https://drive.google.com/file/d/1NBMRv68ZFYNutNhbAqmyUiW7aQgqbmxq/view
+Видео с кратким описанием проекта: ./Поясняющее видео.webm или https://drive.google.com/file/d/1NBMRv68ZFYNutNhbAqmyUiW7aQgqbmxq/view
 
 2 части: бэкенд и фронтенд (демонстрационный), которые общаются посредством json.
 
