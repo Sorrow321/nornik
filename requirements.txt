@@ -1,0 +1,10 @@
+tqdm==4.51.0
+pandas==0.25.3
+torchvision==0.8.2
+numpy==1.19.3
+kraken==2.0.8
+matplotlib==3.3.2
+opencv_python==4.5.1.48
+torch==1.8.1
+scipy==1.6.1
+Pillow==8.2.0

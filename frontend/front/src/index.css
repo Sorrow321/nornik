@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'roboto-light';
+	src: url(fonts/roboto/Roboto-Light.ttf);
+}
+
+body {
+    background-color: #FFFAFA;
+    font-family: roboto-light, sans-serif;
+    font-size: 16px;
+}
