@@ -3,3 +3,5 @@ frames/
 frames_binarized/
 in_pix/
 out2/
+input/
+test_input/
